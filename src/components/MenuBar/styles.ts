@@ -41,7 +41,8 @@ export const Topside = styled.div`
 export const Logo = styled(Rocketseat)`
   width: 41px;
   height: 41px;
-
+  margin-left: 15px;
+  
   > path {
     fill: var(--twitter);
   }
@@ -57,16 +58,19 @@ export const MenuButton = styled.button`
   > span {
     display: none;
 
-    @media(min-width: 1280px) {
-      > span{
-        display: inline;
-        margin-left: 19px;
+  }
 
-        font-weight: bold;
-        font-size: 19px;
-      }
-      padding-right: 15px;
+  @media(min-width: 1280px) {
+    > span {
+      display: inline;
+      margin-left: 19px;
+
+      font-weight: bold;
+      font-size: 19px;
+      
     }
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   padding: 8.25px 0;
@@ -102,12 +106,12 @@ export const MenuButton = styled.button`
   &:hover{
     background: var(--twitter-dark-hover);
   }
+    
 
   &:hover, &.active {
     span,svg {
       color: var(--twitter);
       fill: var(--twitter);
-
     }
   } 
 
